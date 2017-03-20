@@ -1,2 +1,2 @@
 # opo
-opo website
+opo.graphics coming soon.
