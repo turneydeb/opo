@@ -6,12 +6,25 @@ color: $white;
 
 	@include media($screen-tablet) {
 
-		@include span-columns(11);
-			@include shift(0);
-			@include centerer;
+		@include span-columns(10);
+			@include shift(1);
+            margin-top: 30%;
+
+			//@include centerer;
 
 
 	}
+
+    @include media($screen-mobile) {
+
+        @include span-columns(11.5);
+            @include shift(.25);
+            margin-top: 50%;
+
+            //@include centerer;
+
+
+    }
 
     p{
         font-weight: 200;
