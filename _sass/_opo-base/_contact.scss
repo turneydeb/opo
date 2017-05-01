@@ -1,5 +1,5 @@
 section#contact-form{
-margin-top: 2em;
+padding:5%;
 color: $white;
 	@include span-columns(6);
 	@include shift(3);
@@ -19,7 +19,7 @@ color: $white;
 
         @include span-columns(11.5);
             @include shift(.25);
-            margin-top: 10em;
+            margin-top: 8em;
 
 
 
