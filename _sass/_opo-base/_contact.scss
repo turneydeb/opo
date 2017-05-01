@@ -19,7 +19,7 @@ color: $white;
 
         @include span-columns(11.5);
             @include shift(.25);
-            margin-bottom: 50%;
+            //margin-bottom: 50%;
 
             //@include centerer;
 
