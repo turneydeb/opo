@@ -15,6 +15,13 @@ body {
 
 main{
 
+   background-repeat: no-repeat; 
+   background-position:bottom;  
+   -webkit-background-size: cover; 
+   -moz-background-size: cover;  
+   -o-background-size: cover;    
+   background-size:  100%;
+
 }
 
 main.index,
@@ -22,6 +29,13 @@ main.portfolio,
 main.about,
 main.contact, 
 {
+ background-repeat: no-repeat; 
+   background-position:bottom;  
+   -webkit-background-size: cover; 
+   -moz-background-size: cover;  
+   -o-background-size: cover;    
+   background-size:  100%;
+
     @include span-columns(11.5);
     @include shift(.25);
     position: relative;
