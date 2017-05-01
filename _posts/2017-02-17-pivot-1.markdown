@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "pivot 1"
+subtitle: "poster"
+date:   2017-02-17 09:36:52 -0600
+category: design
+author: opo
+thumbnail: /images/projects/pivot/pivot_3.png
+
+
+published: true
+---
+

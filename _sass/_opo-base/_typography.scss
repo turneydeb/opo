@@ -1,0 +1,49 @@
+$heading:  'Fira Sans', sans-serif;
+
+
+$body:  'Fira Sans', sans-serif;
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $heading;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 300%;
+    color: $white;
+}
+
+h2 {
+    font-size: 250%;
+    color: $yellow;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+a {
+    color: white;
+}
+
+
+p{
+
+	font-family: $heading;
+	font-weight:100;
+
+}
+
+
+
+ p a:hover{
+        color:$black;
+
+}

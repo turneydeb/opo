@@ -1,0 +1,44 @@
+ #social-share  {
+     @include span-columns(12);
+     @include shift(0);
+     text-align: left;
+     margin-top: 30px;
+     font-size: 200%;
+     @include media($screen-tablet) {
+         @include span-columns(11);
+     }
+
+     @include media($screen-mobile) {
+         @include span-columns(12);
+           @include shift(0);
+
+     }
+
+
+    
+
+
+     
+    li a.button-social img  {
+      @include span-columns(.75);
+      padding: .4%;
+      margin: 1%;
+         background: transparent;
+         font-size: 80%;
+         border-radius:5px;
+         @include media($screen-tablet) {
+                  @include span-columns(1);
+
+        
+
+     }
+
+     @include media($screen-mobile) {
+                  @include span-columns(1.75);
+                  padding: 5% 5% 0 0;
+
+        
+
+     }
+     }
+ }

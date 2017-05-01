@@ -1,0 +1,37 @@
+<section id="contact-form">
+
+<p>Full site coming soon, but you can contact me here and see my work <a href="https://www.behance.net/opographics">Behance</a> and <a href="https://ello.co/opographics">Ello</a>
+</p>
+<hr>
+<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+"Please enter a valid email address");
+</script>
+
+<form class="disco-contact" method="post" name="contact_form"
+action="https://formspree.io/info@opo.design">
+<input type="hidden" name="_format" value="plain" />
+<ul>
+<li >
+<input type="text" name="name" placeholder="Please enter your name">
+</li>
+<li>
+<input type="text" name="_replyto" name="email" placeholder="Please provide your email address">
+</li>
+<li>
+<textarea name="message" placeholder="Please enter your message"></textarea>
+</li>
+<li>
+<input type="submit" value="Submit">
+</li>
+
+</ul>
+
+</form>   
+
+    {% include social-follow.html %}
+
+</section>

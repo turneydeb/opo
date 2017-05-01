@@ -1,0 +1,172 @@
+$color-background: #F5F5F5;
+$color-main: #FF5252;
+$color-active: #FFF;
+$color-link: #FFF;
+$button-height: 25px;
+$button-width: 25px;
+
+
+
+.button_container {
+    position: absolute;
+    top: 45px;
+    right: 5%;
+    height: $button-height;
+    width: $button-width;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity .15s ease;
+    &:hover {
+        opacity: 10;
+    }
+    &.active {
+        .top {
+            transform: translateY(200px) translateX(0) rotate(45deg);
+            background: $white;
+        }
+        .middle {
+            opacity: 0;
+            background: $white;
+        }
+        .bottom {
+            transform: translateY(200px) translateX(0) rotate(-25deg);
+            background: $white;
+        }
+    }
+    span {
+        background: $white;
+        border: none;
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .15s ease;
+        cursor: pointer;
+        &:nth-of-type(2) {
+            top: 11px;
+        }
+        &:nth-of-type(3) {
+            top: 22px;
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    background: $yellow;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    padding:5%;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    z-index: 1000;
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        li {
+            animation: fadeInRight .5s ease forwards;
+            animation-delay: .15s;
+            &:nth-of-type(2) {
+                animation-delay: .4s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: .45s;
+            }
+            &:nth-of-type(4) {
+                animation-delay: .50s;
+            }
+        }
+    }
+    nav {
+        position: relative;
+        height: 70%;
+        top: 30%;
+        line-height: 1.5;
+        font-size: 500%;
+        font-family: $heading;
+        font-weight: 700;
+
+         @include media($screen-mobile){
+
+                    font-size: 300%;
+
+
+         }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        li {
+            display: block;
+            //height: 25%;
+            //height: calc(100% / 4);
+            //min-height: 50px;
+            position: relative;
+            opacity: 0;
+            a {
+                display: block;
+                position: relative;
+                color: $black;
+                text-decoration: none;
+                //overflow: hidden;
+                &:hover:after,
+                &:focus:after,
+                &:active:after {
+                    width: 10%;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    //left: 50%;
+                    width: 0%;
+                    //transform: translateX(-50%);
+                    height: 30px;
+                    background: $color-link;
+                    transition: .35s;
+                }
+            }
+            a:hover, a.active {
+                color: $dark-blue;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+  @include media($screen-tablet){
+
+.button_container {
+    cursor: pointer;
+    height: 25px;
+    position: absolute;
+    right: 3%;
+    top: 15px;
+    transition: opacity 0.15s ease 0s;
+    width: 25px;
+    z-index: 1000;
+}
+
+}
+

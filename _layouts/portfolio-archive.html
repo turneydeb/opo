@@ -1,0 +1,33 @@
+	{% include head.html %}
+	{% include header.html %}
+
+
+	<div id="portfolio" class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 10 }'> 
+
+	<h2>{{page.title}}</h2>
+
+	<section id="portfolio-items" >
+	{% for post in site.posts %}
+
+	<a class="grid-item" href="{{ post.url }}" >
+	<img src="{{ post.thumbnail }}" alt="{{ post.title }}">
+
+	<ul>
+	{% for category in post.categories %}
+
+	{% endfor %}
+	</ul>
+
+	<div class="title">
+	{{ post.title }}
+	{{ post.subtitle }}
+	</div>  <!-- end title -->
+
+	</a>
+	{% endfor %}
+
+	</section>  <!--  end portfolio items -->
+	</div> <!-- end portfolio  -->
+	</main>   
+	
+	{% include footer.html %}

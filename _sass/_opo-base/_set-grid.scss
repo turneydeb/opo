@@ -1,0 +1,13 @@
+$visual-grid: false;
+$column:20px;
+$gutter:20px;
+$grid-columns:12;
+$max-width: 100%;	
+
+
+
+$screen-desktop: new-breakpoint(max-width 1800px 12);
+$screen-tablet: new-breakpoint(max-width 768px 12);
+$screen-mobile: new-breakpoint(max-width 414px 12);
+
+

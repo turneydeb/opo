@@ -1,0 +1,41 @@
+		//homepage title//
+		header {
+		    @include span-columns(12);
+		    padding: 2% 0;
+		    margin-bottom: 70px;
+		    @include media($screen-tablet) {
+		        padding: 0;
+		        line-height: 0;
+		        position: fixed;
+		        z-index: 9999;
+		    }
+		}
+		
+		#title a {
+			z-index: 999999;
+		    color: $white;
+		    @include span-columns(4);
+		    @include shift(4);
+		    text-align: left;
+		    @include media($screen-tablet) {
+		        @include span-columns(12);
+		        @include shift(1.5);
+		        line-height: 0;
+		        margin-top: 30px;
+		    }
+		}
+
+
+
+ @include media($screen-tablet){
+
+
+ 	header {
+    background: #1c1c1c none repeat scroll 0 0;
+    height: 60px;
+    z-index: 999999;
+            box-shadow: $shadow;
+
+}
+
+}

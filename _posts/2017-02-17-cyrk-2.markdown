@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Cyrk Posters Exhibition"
+subtitle: "Poster created to advertise a Polish poster exhibition."
+
+date:   2017-02-17 09:36:52 -0600
+category: design
+author: opo
+
+thumbnail: /images/projects/cyrk/cyrk_1.png
+
+image: /images/projects/cyrk/cyrk_1.png
+
+description: descriptiontest descriptiontest descriptiontest descriptiontest descriptiontest description
+
+slug: Cyrk-Posters-Exhibition
+
+published: true
+---
+
+
+

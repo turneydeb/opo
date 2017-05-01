@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "moth: Volume 2 Spring 2017"
+subtitle: "A Science Fiction Literary Journal"
+
+date:   2017-02-17 09:36:52 -0600
+category: design
+author: opo
+
+thumbnail: /images/projects/moth/thumbnail.png
+
+image: /images/projects/cyrk/cyrk_1.png
+
+description: test descriptiontest descriptiontest descriptiontest 
+
+slug: moth-volume-2-2017
+
+published: true
+---
+
+
+
