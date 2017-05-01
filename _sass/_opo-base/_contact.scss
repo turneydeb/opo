@@ -25,6 +25,13 @@ color: $white;
 
     }
 
+    @media (max-width: 300px) {
+
+        padding:0 5% ;
+
+
+    }
+
     p{
         font-weight: 200;
     }
